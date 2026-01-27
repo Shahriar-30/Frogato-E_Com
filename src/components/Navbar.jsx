@@ -32,7 +32,7 @@ const Navbar = () => {
       <nav className="flex w-full  backdrop-blur-md z-50 bg-white/30 fixed top-0 items-center justify-between p-2 border  border-black ">
         {/* logo */}
         <div className="text-xl text-black w-fit font-bold mr-5">
-          <Link to={"/"}>Frogato</Link>
+          <Link to={"/profile"}>Frogato</Link>
         </div>
         {/* search */}
         <div>

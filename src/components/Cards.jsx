@@ -8,6 +8,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 import { Heading, Image, SquarePlus, Text } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const handelAddToCart = (info) => {
   console.log(info);
@@ -33,6 +34,7 @@ const Cards = ({ url, title, category, prize, count }) => {
         </CardHeader>
 
         <CardFooter justify="space-between">
+          <Link to={'/products'}>
           <Button
             color={"white"}
             gap={2}
@@ -42,7 +44,7 @@ const Cards = ({ url, title, category, prize, count }) => {
             onClick={() => handelAddToCart(value)}
           >
             <SquarePlus color="#fff" /> Add to Cart
-          </Button>
+          </Button></Link>
         </CardFooter>
       </Card>
     </div>
