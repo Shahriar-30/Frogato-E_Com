@@ -34,7 +34,7 @@ const Cards = ({ url, title, category, prize, count }) => {
         </CardHeader>
 
         <CardFooter justify="space-between">
-          <Link to={'/products'}>
+          <Link to={'/cart'}>
           <Button
             color={"white"}
             gap={2}
