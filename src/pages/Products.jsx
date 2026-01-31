@@ -4,7 +4,7 @@ import { tshirtProducts } from "../data/Json";
 import { Button } from "@chakra-ui/react";
 
 const Products = () => {
-  const itemsPerPage = 6; // show 6 at a time
+  const itemsPerPage = 3; // show 6 at a time
   const [visibleCount, setVisibleCount] = useState(itemsPerPage);
 
   const loadMore = () => {
